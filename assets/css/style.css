@@ -81,6 +81,7 @@ header ul li {
   position: absolute;
   width: 100%;
   overflow: hidden;
+  scroll-behavior: smooth;
 }
 
 article {

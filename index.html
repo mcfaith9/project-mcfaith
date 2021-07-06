@@ -47,15 +47,14 @@
 
 				<ul id="menu">
 					<li><a href="">home<span>.</span></a></li>
-					<li><a href="">work<span>.</span></a></li>
+					<li><a href="">project<span>.</span></a></li>
 					<li><a href="">about me<span>.</span></a></li>
 					<li><a href="">contact<span>.</span></a></li>
 				</ul>
 			</div>
 
 			<div class="hero">
-				<div class="header">
-					<h1 class="line anim-typewriter">I make brands matter in culture.</h1>
+				<div class="header header-typewriter">					
 				</div>
 			</div>
 
@@ -178,6 +177,11 @@
 	
 	<script type="text/javascript">
 		$(document).ready(function () {
+			// Type Writer
+			setTimeout(function() {
+				$('.header-typewriter').append('<h1 id="" class="line anim-typewriter">ctrl + A ctrl + C and ctrl + V .</h1>');
+			}, 5500);		
+
 		  	// navigation starts here
 		  	$("#toggle").click(function() {
 		  		$(this).toggleClass('on');
