@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.12.0/devicon.min.css">
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
 	<!-- greensock cdn -->		
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
@@ -26,7 +26,7 @@
 
 			<nav>
 				<span id="brand">
-					<a href="">mcfaith <./></a>
+					<a id="nav-logo" href="#">mcfaith <./></a>
 				</span>
 
 				<ul id="menu">
@@ -173,14 +173,34 @@
     </div>
     <!-- Main JS -->
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.0/gsap.min.js"></script>
-	<script type="text/javascript" src="assets/js/script.js"></script>
+	<!-- <script type="text/javascript" src="assets/js/script.js"></script> -->
 	
 	<script type="text/javascript">
 		$(document).ready(function () {
-			// Type Writer
-			setTimeout(function() {
+			
+			// Animate only on first time visit
+			var isshow = localStorage.getItem('isshow');
+			if (isshow== null) {
+			    localStorage.setItem('isshow', 1);		
+			    setTimeout(function() {
+			    	$('.header-typewriter').append('<h1 id="" class="line anim-typewriter">ctrl + A ctrl + C and ctrl + V .</h1>');
+			    }, 5800);	    
+			} else {
+				// Type Writer
 				$('.header-typewriter').append('<h1 id="" class="line anim-typewriter">ctrl + A ctrl + C and ctrl + V .</h1>');
-			}, 5500);		
+				$(".cover").remove();
+				$(".cover-2").remove();
+				$(".cover-3").remove();
+				$(".cover-4").remove();						
+			}
+
+			// var isshow = $.cookie("isshow");
+	  //   if (isshow == null) {
+	  //       $.cookie("isshow", 1); // Store
+
+	  //       // Show popup here
+	  //       $('#jPopup').show();
+	  //   }
 
 		  	// navigation starts here
 		  	$("#toggle").click(function() {
@@ -212,6 +232,5 @@
 		  	new WOW().init();
 		});		
 	</script>
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </body>
 </html>

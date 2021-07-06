@@ -56,6 +56,11 @@ header ul li {
   margin-left: 10px;
 }
 
+#nav-logo{
+  font-size: 1.2em;
+  font-size: calc(1.2em + 1vw);
+}
+
 .cover-2 {
   background-color: #0f0f0f;
   position: absolute;
