@@ -193,6 +193,7 @@
 			if (isshow== null) {
 		    localStorage.setItem('isshow', 1);		
 		    $(".loader-wrapper").remove(); 
+		    $("body").removeClass("overflow-hidden");
 		    setTimeout(function() {
 		    	$('.header-typewriter').append('<h1 id="" class="line anim-typewriter">ctrl + A ctrl + C and ctrl + V .</h1>');
 		    }, 5800);	    
