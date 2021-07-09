@@ -35,7 +35,7 @@
 		<div class="wrapper">
 			<nav>
 				<span id="brand">
-					<a id="nav-logo" class="text-change" href="#">mcfaith &lt;/&gt;</a>
+					<a id="nav-logo" class="hack-text" href="#">mcfaith &lt;/&gt;</a>
 				</span>
 				<ul id="menu">
 					<li><a href="">home<span>.</span></a></li>
@@ -43,24 +43,10 @@
 					<li><a href="">about me<span>.</span></a></li>
 					<li><a href="">contact<span>.</span></a></li>
 				</ul>
-				<div id="toggle">
-					<div class="span">menu</div>
-				</div>
 			</nav>
 
-			<div id="resize">
-				<div class="close-btn">close</div>
-				<ul id="menu">
-					<li><a href="">home<span>.</span></a></li>
-					<li><a href="">project<span>.</span></a></li>
-					<li><a href="">about me<span>.</span></a></li>
-					<li><a href="">contact<span>.</span></a></li>
-				</ul>
-			</div>
-
 			<div class="hero">
-				<div class="header header-typewriter">					
-				</div>
+				<div class="header header-typewriter"></div>
 			</div>
 
 			<div class="scroll-down"></div>
@@ -203,8 +189,8 @@
 				$(window).bind('load', function() {
 					$('.loader-wrapper, body').addClass('loaded');
 					setTimeout(function() {
-						$("body").removeClass("overflow-hidden");
-						$('.loader-wrapper').remove();						
+						$('.loader-wrapper').remove();
+						$("body").removeClass("overflow-hidden");						$						
 						// Type Writer
 						$('.header-typewriter').append('<h1 id="" class="line anim-typewriter data">ctrl + A ctrl + C and ctrl + V .</h1>');	
 					}, 5000);
