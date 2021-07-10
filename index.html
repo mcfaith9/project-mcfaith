@@ -20,18 +20,7 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" crossorigin="anonymous"></script>
 </head>
-<body class="overflow-hidden">	
-	<!-- Scroll to top button -->
-	<a id="scroll-top-button" class="go-top"></a>
-	<!-- Loader if user is 2nd visit -->
-	<div class="loader-wrapper">
-	  <div class="loader-container">
-	    <h1 class="lt">&lt</h1>
-	    <h1 class="loader">/</h1>
-	    <h1 class="lt" id="ltNd">&lt</h1>
-	  </div>
-	</div>
-
+<body class="overflow-hidden">		
 	<div class="cover-5">
 		<div class="wrapper">			
 			<nav>
@@ -163,6 +152,17 @@
       <span class="dot">.</span>
     </div>
   </div>  
+
+  <!-- Scroll to top button -->
+  <a id="scroll-top-button" class="go-top"></a>
+  <!-- Loader if user is 2nd visit -->
+  <div class="loader-wrapper">
+    <div class="loader-container">
+      <h1 class="lt">&lt</h1>
+      <h1 class="loader">/</h1>
+      <h1 class="lt" id="ltNd">&lt</h1>
+    </div>
+  </div>
   <!-- Main JS -->
   <script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.0/gsap.min.js" crossorigin="anonymous"></script>
@@ -189,10 +189,10 @@
 				$(".cover-2").remove();
 				$(".cover-3").remove();
 				$(".cover-4").remove();	
-				// Will wait for everything on the page to load.
-				$('.loader-wrapper, body').addClass('loaded');
+				// Will wait for everything on the page to load.				
 				$(window).bind('load', function() {					
 					setTimeout(function() {						
+						$('.loader-wrapper, body').addClass('loaded');
 						$('.loader-wrapper').remove();
 						$("body").removeClass("overflow-hidden");						
 						// Type Writer
