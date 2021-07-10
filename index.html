@@ -33,17 +33,16 @@
 	</div>
 
 	<div class="cover-5">
-		<div class="wrapper">
-			<div class="scroll-down"></div>
+		<div class="wrapper">			
 			<nav>
 				<span id="brand">
 					<a id="nav-logo" class="hack-text" href="#">mcfaith &lt;/&gt;</a>
 				</span>
 				<ul id="menu">
-					<li><a href="#">home<span>.</span></a></li>					
-					<li><a href="#">about me<span>.</span></a></li>
-					<li><a href="#">project<span>.</span></a></li>
-					<li><a href="#">contact<span>.</span></a></li>
+					<li><a href="#" class="js-anchor-link">home<span>.</span></a></li>					
+					<li><a href="#about-me" class="js-anchor-link">about me<span>.</span></a></li>
+					<li><a href="#my-projects" class="js-anchor-link">project<span>.</span></a></li>
+					<li><a href="#contact-me" class="js-anchor-link">contact<span>.</span></a></li>
 				</ul>
 				<div id="toggle">
 					<div class="span">menu</div>
@@ -53,17 +52,17 @@
 				<div class="close-btn">close</div>
 
 				<ul id="menu">
-					<li><a href="#">home<span>.</span></a></li>
-					<li><a href="#">about me<span>.</span></a></li>
-					<li><a href="#">project<span>.</span></a></li>					
-					<li><a href="#">contact<span>.</span></a></li>
+					<li><a href="#" class="js-anchor-link">home<span>.</span></a></li>
+					<li><a href="#about-me" class="js-anchor-link">about me<span>.</span></a></li>
+					<li><a href="#my-projects" class="js-anchor-link">project<span>.</span></a></li>					
+					<li><a href="#contact-me" class="js-anchor-link">contact<span>.</span></a></li>
 				</ul>
 			</div>
 
 			<div class="hero">
 				<div class="header header-typewriter"></div>
 			</div>
-			
+			<div class="scroll-down"></div>
 
 			<div class="container-fluid" id="about-me">
 				<br><br><br>
@@ -99,6 +98,15 @@
 				<div class="whitespace"></div>
 			</div>
 
+			<div class="container-fluid" id="contact-me">
+				<br><br><br>
+
+				<h6>Contact me</h6>
+
+				<div class="vertical"></div>
+				<br>
+			</div>
+
 			<div class="footer">
 				<div class="container">
 					<br><br>
@@ -125,9 +133,9 @@
 								<p class="wow fadeInUp" data-wow-delay="0s">follow me</p>
 								<ul>
 									<li id="fb" class="wow fadeInUp" data-wow-delay="0.4s">fb</li>
-									<li id="ig" class="wow fadeInUp" data-wow-delay="0.6s">gt</li>
-									<li id="tw" class="wow fadeInUp" data-wow-delay="0.8s">cd</li>
-									<li id="yt" class="wow fadeInUp" data-wow-delay="1s">yt</li>
+									<li id="ig" class="wow fadeInUp" data-wow-delay="0.6s">github</li>
+									<li id="tw" class="wow fadeInUp" data-wow-delay="0.8s">messenger</li>
+									<!-- <li id="yt" class="wow fadeInUp" data-wow-delay="1s">e</li> -->
 								</ul>
 
 								<br><br>
@@ -135,7 +143,7 @@
 
 							<div class="col-lg-4" id="address">
 								<p class="wow fadeInUp" data-wow-delay="0s">say hello</p>
-								<h4 class="wow fadeInUp" data-wow-delay="0.2s">mcfaith@gmail.com</h4>
+								<h4 class="wow fadeInUp" data-wow-delay="0.2s">marclouie@aguyiknow.com.ph</h4>
 								<br><br>
 							</div>
 						</div>
@@ -160,21 +168,8 @@
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.0/gsap.min.js" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="assets/js/ease-cover.js"></script>
 	<script type="text/javascript" src="assets/js/text-animation.js"></script>
-	<!-- <script src="https://code.jquery.com/jquery-3.4.1.js"></script> -->
-	<script type="text/javascript">
-		// Scroll Button to Top
-		var scrollTopBtn = $('#scroll-top-button');
-		$(window).scroll(function() {
-		  if ($(window).scrollTop() > 300) {
-		    scrollTopBtn.addClass('show');
-		  } else {
-		    scrollTopBtn.removeClass('show');
-		  }
-		});
-		scrollTopBtn.on('click', function(e) {
-		  e.preventDefault();
-		  $('html, body').animate({scrollTop:0}, '300');
-		});		
+	<script type="text/javascript" src="assets/js/scrolling-functions.js"></script>
+	<script type="text/javascript">	
 		
 		$(document).ready(function () {		
 			// Animate only on first time visit
@@ -201,7 +196,7 @@
 						$('.loader-wrapper').remove();
 						$("body").removeClass("overflow-hidden");						
 						// Type Writer
-						$('.header-typewriter').append('<h1 id="" class="line anim-typewriter data">ctrl + A ctrl + C and ctrl + V .</h1>');	
+						$('.header-typewriter').append('<h1 id="" class="line anim-typewriter data">ctrl + A ctrl + C and ctrl + V .</h1>');
 					}, 5000);
 				});				
 				// Will remove overlay after 1min for users cannnot load properly.

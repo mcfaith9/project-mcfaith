@@ -140,10 +140,10 @@ article {
 
 @media (min-width: 1024px) {
   .cover-heading h1 {
-    font-size: 72px;
+    font-size: calc(2.5em + 1vw);
   }
   .cover-heading span {
-    font-size: 72px;
+    font-size: calc(2.5em + 1vw);
   }
   header {
     padding: 50px 80px;
@@ -394,7 +394,7 @@ nav #menu li a:hover {
 
 @media (max-width: 768px) {
   .header h1 {
-    font-size: 26px;
+    font-size: calc(1em + 1vw);
   }
 }
 
