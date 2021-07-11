@@ -4,10 +4,11 @@
   border-radius: 50%;
   width: 150px;
 	height: 150px;
-  background: url(../images/profile1.svg) 0 0 no-repeat;
-  -webkit-animation: focus ease-in-out infinite 7s;
-  -moz-animation: focus ease-in-out infinite 7s;
-  animation: focus ease-in-out infinite 7s;
+  background: url(../images/profile1.svg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   -webkit-filter: grayscale(70%);
   filter: grayscale(70%);
 }

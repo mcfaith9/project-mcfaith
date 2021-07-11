@@ -209,7 +209,7 @@
 		    $("body").removeClass("overflow-hidden");
 		    setTimeout(function() {
 		    	$('.header-typewriter').append('<h1 id="" class="line anim-typewriter">ctrl + A ctrl + C and ctrl + V .</h1>');
-		    }, 5800);	    
+		    }, 4800);	    
 			} 
 			else {
 				// Load Loader CSS
@@ -221,12 +221,12 @@
 				// Will wait for everything on the page to load.				
 				$(window).bind('load', function() {					
 					setTimeout(function() {						
-						$('.loader-wrapper, body').addClass('loaded');
-						$('.loader-wrapper').remove();
+						$('.loader-container').remove();
+						$('.loader-wrapper, body').addClass('loaded');						
 						$("body").removeClass("overflow-hidden");						
 						// Type Writer
 						$('.header-typewriter').append('<h1 id="" class="line anim-typewriter data">ctrl + A ctrl + C and ctrl + V .</h1>');
-					}, 5000);
+					}, 4800);
 				});				
 				// Will remove overlay after 1min for users cannnot load properly.
 				setTimeout(function() {
