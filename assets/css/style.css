@@ -821,3 +821,8 @@ textarea:focus {
   color: rgba(200,30,30,0.8);
   filter: drop-shadow(0 0 0.5em #f00);
 }
+
+/* ----------------------- Devicons ------------------------------------ */
+.devicons{
+  font-size: calc(3em + 1vw) !important;
+}
