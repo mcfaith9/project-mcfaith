@@ -1,0 +1,40 @@
+.profile {
+  position: relative;
+  margin: calc(10vh - 1vw) auto 0;
+  border-radius: 50%;
+  width: 150px;
+	height: 150px;
+  background: url(../images/profile1.svg) 0 0 no-repeat;
+  -webkit-animation: focus ease-in-out infinite 7s;
+  -moz-animation: focus ease-in-out infinite 7s;
+  animation: focus ease-in-out infinite 7s;
+  -webkit-filter: grayscale(70%);
+  filter: grayscale(70%);
+}
+
+.hello {
+  position: absolute;
+  top: calc(-90px + 1vw);
+  left: calc(-100px + -6vw);
+  margin-right: 6.9em;
+  padding: 10px 15px;
+  border-radius: 7px;
+  background: #ddd;
+  color: #555;
+  font-size: 0.8em;
+  line-height: 1.5em;
+  letter-spacing: 0.1em;
+}
+
+.hello::before {
+  content: ' ';
+  position: absolute;
+  bottom: -10px;
+  right: 20px;
+  border-left: 20px solid transparent;
+  border-right: 0px solid transparent;
+  border-top: 15px solid #ddd;
+  width: 0; 
+  height: 0; 
+  
+}
