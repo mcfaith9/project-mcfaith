@@ -1,4 +1,5 @@
-const chars = "Σ×Π#-_¯—→↓↑←0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZ";
+// const chars = "Σ×Π#-_¯—→↓↑←0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZ";
+const chars = "456Σ×Π#ABCDE";
 
 var Glitch = function(selector, index, numberOfGlitchedLetter, timeGlitch, timePerLetter, timeBetweenGlitch){
   this.selector = selector;
@@ -75,8 +76,8 @@ function initAllGlitch(){
   for(let i=0; i<arrayElements.length; i++){
     let selector = arrayElements[i];
     let randLetterNumber = 2 + Math.floor(Math.random() * 8);
-    let randGlitchTime = 500 + Math.floor(Math.random() * 2500);
-    let randGlitchPauseTime = 3000 + Math.floor(Math.random() * 2500);
+    let randGlitchTime = 200 + Math.floor(Math.random() * 2500);
+    let randGlitchPauseTime = 500 + Math.floor(Math.random() * 2500);
     let glitch = new Glitch(selector, i, randLetterNumber, 200, 65, randGlitchPauseTime);
     glitch.init();
     glitchArray.push(glitch);
