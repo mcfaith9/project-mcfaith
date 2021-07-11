@@ -719,6 +719,14 @@ h6 {
     no-repeat 50% 70%;
 }
 
+.text-center p{
+  font-weight: lighter;
+}
+
+.text-center h5{
+  font-weight: lighter;
+}
+
 /*--------------- contact form --------------- */
 
 #contact-form {
@@ -824,5 +832,5 @@ textarea:focus {
 
 /* ----------------------- Devicons ------------------------------------ */
 .devicons{
-  font-size: calc(3em + 1vw) !important;
+  font-size: calc(2.3em + 1vw) !important;
 }
