@@ -730,14 +730,18 @@ h6 {
 /*--------------- contact form --------------- */
 
 .contact-form{
-  position: relative;
-  width: 500px;
+  position: relative;  
   margin: 0 auto 0 auto;
 }
 .contact-form-input{
   background: transparent !important;
   outline: none !important;
   color: #726659 !important;
+}
+@media (min-width: 1024px) {
+  .contact-form {
+    width: calc(80% - 25vw);
+  }
 }
 
 /*--------------- project page --------------- */
