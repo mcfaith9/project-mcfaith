@@ -219,7 +219,7 @@
 		$(document).ready(function () {		
 			// Animate only on first time visit
 			var isshow = localStorage.getItem('isshow');
-			if (isshow== null) {
+			if (isshow !== null) {
 		    localStorage.setItem('isshow', 1);		
 		    $(".loader-wrapper").remove(); 
 		    $("body").removeClass("overflow-hidden");

@@ -152,7 +152,7 @@ article {
 
 .cover-heading h1 {
   color: white;
-  font-size: 52px;
+  font-size: calc(34px + 1vw);
   font-weight: 900;
   display: inline-block;
   font-family: "Roboto", sans-serif;
@@ -168,7 +168,7 @@ article {
 
 @media (min-width: 1024px) {
   .cover-heading h1 {
-    font-size: calc(42px + 1vw);
+    font-size: calc(34px + 1vw);
   }
   .cover-heading span {
     font-size: 72px;
