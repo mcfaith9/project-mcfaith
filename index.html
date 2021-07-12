@@ -9,6 +9,7 @@
 
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/profile-image.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/gallery-animation.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.12.0/devicon.min.css">
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -50,7 +51,8 @@
 			</div>
 
 			<div class="hero">
-				<div class="header header-typewriter"></div>
+				<div class="header header-typewriter">
+				</div>
 			</div>
 			<div class="scroll-down"></div>
 
@@ -102,18 +104,32 @@
 
 				<div class="whitespace"></div>
 				<div class="whitespace"></div>
-
-				<div class="row">
-					<div class="col-lg-6"></div>
-					<div class="col-lg-6 project project1 wow fadeInUp" onclick="window.open('https://mcfaith9.github.io/snservices.com.au-comingsoon/', '_newtab');"></div>
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6 col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0.4s">
+					    <div class="hovereffect">
+					        <img class="img-responsive" src="assets/images/hashtagkiki.svg" alt="">
+			            <div class="overlay">
+		                <h2>hashtagkiki.</h2>
+										<p>
+											<a href="https://mcfaith9.github.io/hashtagkiki.com.au/" target="_blank"><i class="devicon-github-original-wordmark"></i> view on github</a>
+										</p>
+			            </div>
+					    </div>
+						</div>
+						<div class="col-lg-6 col-md-4 col-sm-6 col-xs-12 wow fadeInUp" data-wow-delay="0.6s">
+					    <div class="hovereffect">
+					        <img class="img-responsive" src="assets/images/snservices.svg" alt="">
+			            <div class="overlay">
+		                <h2>snservices.</h2>
+										<p>
+											<a href="https://mcfaith9.github.io/snservices.com.au-comingsoon/" target="_blank">LINK HERE</a>
+										</p>
+			            </div>
+					    </div>
+						</div>
+					</div>
 				</div>
-
-				<div class="whitespace"></div>
-
-				<div class="row">
-					<div class="col-lg-6 project project2 wow fadeInUp" onclick="window.open('https://mcfaith9.github.io/hashtagkiki.com.au/', '_newtab');"></div>
-					<div class="col-lg-6"></div>
-				</div>	
 				<div class="whitespace"></div>
 			</div>
 
@@ -125,16 +141,19 @@
 				<div class="vertical"></div>
 				<br>
 				<div class="container">
-					<form class="contact-form">
+					<form class="contact-form" method="post">
+						<fieldset>
 					  <div class="form-group">
-					    <input type="email" class="form-control contact-form-input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email address">
+					    <input type="email" class="form-control contact-form-input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email address" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" required>
 					    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
 					  </div>
 					  <div class="form-group">
-				      <textarea class="form-control contact-form-input" id="exampleFormControlTextarea1" rows="3" placeholder="Say hi."></textarea>
+				      <textarea class="form-control contact-form-input" id="exampleFormControlTextarea1" rows="3" placeholder="Say hi." required></textarea>
 				    </div>
 				    <br>
-				    <button type="submit" class="btn btn-outline-success">Send.</button>					  
+				    <!-- <a href="mailto:marclouie.cabigas@yahoo.com" class="btn btn-outline-success" role="button" aria-disabled="true" target="_blank">Send.</a>		  -->
+				    <button class="btn btn-outline-success" type="submit" name="submit">Send.</button>
+				    </fieldset>
 					</form>
 				</div>
 				<br>
