@@ -703,3 +703,11 @@ h6 {
 .devicons{
   font-size: calc(2.3em + 1vw) !important;
 }
+
+/*Util*/
+.bgblack{
+  background: #000;
+}
+.p-10{
+  padding: 10px;
+}
