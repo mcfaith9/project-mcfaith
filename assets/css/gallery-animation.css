@@ -80,3 +80,6 @@
   -webkit-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
 }
+.hovereffect:hover a{
+  color: #28a745;
+}
