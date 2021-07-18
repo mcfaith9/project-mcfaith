@@ -711,3 +711,6 @@ h6 {
 .p-10{
   padding: 10px;
 }
+.m-b-20px{
+  margin-bottom: calc(20px + 1vw);
+}
