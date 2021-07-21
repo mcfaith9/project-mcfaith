@@ -83,6 +83,7 @@ header ul li {
   cursor: pointer;
 }
 
+
 .overflow-hidden{
   overflow: hidden;
 }
@@ -422,6 +423,9 @@ nav #menu li a:hover {
 @media (min-width: 768px) {
   #resize {
     visibility: hidden !important;
+  }
+  .go-top{
+    right: 9px;
   }
 }
 
