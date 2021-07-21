@@ -439,6 +439,26 @@
 		$(document).ready(function () {		
 			// Animate only on first time visit
 			var isshow = localStorage.getItem('isshow');
+			var isMobile = false;
+			// device detection
+			if( /Android|webOS|iPhone|iPad|Mac|Macintosh|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+			 	console.log(isMobile = true);
+			} else {
+				$(window).scroll(function(){
+			    if ($(window).scrollTop() >= 10) {
+			    	$('.cover-5').removeAttr('style');
+			      $('nav').addClass('fixed-header');
+			      $('#menu li').addClass('fixed-header-li');
+			      $('#brand').addClass('fixed-header-brand');
+			    }
+			    else {
+			      $('nav').removeClass('fixed-header');
+			      $('#menu li').removeClass('fixed-header-li');
+			      $('#brand').removeClass('fixed-header-brand');
+			    }
+				});		
+			}	
+			
 			if (isshow == null) {
 		    localStorage.setItem('isshow', 1);		
 		    $(".loader-wrapper").remove(); 

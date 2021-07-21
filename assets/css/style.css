@@ -297,6 +297,27 @@ nav #menu li a:hover {
   text-decoration: none;
 }
 
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; 
+  z-index: 999;
+  background: #ffa31a;
+  transition: background 0.5s;
+  height: 7%;
+}
+.fixed-header-li{
+  line-height: 53px !important  ;
+  font-size: 14px;
+  transition: font-size 0.5s;
+}
+.fixed-header-brand{
+  line-height: 51px !important  ;
+  font-size: 8px;
+  transition: font-size 0.2s;
+}
+
 #toggle {
   position: absolute;
   right: 30px;
