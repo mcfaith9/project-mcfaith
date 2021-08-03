@@ -11,6 +11,7 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/profile-image.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/gallery-animation.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/post.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/hero-style.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.12.0/devicon.min.css">
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -52,10 +53,9 @@
 				</ul>
 			</div>
 
-			<div class="hero">
-				<div class="header header-typewriter">
-				</div>
-			</div>
+			<div class="hero">				
+				<div class="header header-typewriter"></div>				
+			</div>			
 			<div class="scroll-down"></div>
 
 			<div class="container-fluid" id="about-me">
@@ -86,12 +86,25 @@
 	          <i class="devicons devicon-jquery-plain-wordmark wow fadeInUp" data-wow-delay="0.8s"></i>         
 	          <i class="devicons devicon-php-plain wow fadeInUp" data-wow-delay="0.8s"></i>
 	          <i class="devicons devicon-wordpress-plain-wordmark wow fadeInUp" data-wow-delay="0.8s"></i>
-	        </div>
-	        <br><br>
+	        </div>	                
+	        <br>
 	        <div class="text-center">
 	        	<a href="https://mcfaith9.github.io/project-mcfaith/assets/images/Turquoise%20Orange%20Profile%20Infographic%20Resume.pdf" class="btn btn-outline-success" role="button" aria-disabled="true" target="_blank">View Resume on github</a>
 	        	<a href="https://github.com/mcfaith9/project-mcfaith/raw/main/assets/images/mcfaithResume.zip" class="btn btn-outline-success" role="button" aria-disabled="true" target="_blank">Download Resume</a>
 	        </div>
+	        <br>
+	        <div class="text-center">
+	        	<p>
+	        	  <a class="" data-toggle="collapse" href="#aboutme-more" role="button" aria-expanded="false" aria-controls="aboutme-more" style="color:#fff;">
+	        	    show more
+	        	  </a>
+	        	</p>
+	        	<div class="collapse" id="aboutme-more">
+	        	  <div>
+	        	    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+	        	  </div>
+	        	</div>
+	        </div>	
 				</div>
 				<br><br><br>
 			</div>
@@ -222,7 +235,7 @@
 
 				<div class="vertical"></div>
 				<br>
-				<div class="container">
+				<div class="container" id="post-container">
 					<!-- Start Post -->
 					<div class="ultimate-post-kit-container">
 						<div class="ultimate-post-kit">
@@ -436,10 +449,37 @@
 	<script type="text/javascript" src="assets/js/text-animation.js"></script>
 	<script type="text/javascript" src="assets/js/scrolling-functions.js"></script>
 	<script type="text/javascript">			
+	var heroblock = '<div class="card" style="background-color:transparent;">'+
+									'<div class="content">'+
+									'<h1 class="light">Hello World<span class="dark">.</span></h1>'+
+									'<p class="medium">Next Time a &nbsp;<a class="light" href="#">Stranger</a></p>'+
+									'<p class="medium">To you when you\'re alone</p>'+
+									'<div class="column">'+
+									'<h6 class="dark">....</h6>'+
+									'<br />'+
+									'<h5 class="medium">Just look at &nbsp;</h5>'+
+									'<h5 class="medium">them shocked and whisper.</h5>'+
+									'</div>'+
+									'<div class="column">'+
+									'<h6 class="dark">....</h6>'+
+									'<br />'+
+									'<h5 class="medium">"You can see me?"</h5>'+
+									'<h5 class="medium"></h5>'+
+									'</div>'+
+									'<div class="tabs dark">'+
+									'<p class="tab">One thing</p>'+
+									'<p class="tab">Codepen</p>'+
+									'<p class="tab">Thing two</p>'+
+									'<p class="tab">dribbble</p>'+
+									'</div>'+
+									'</div>'+
+									'</div>';
+
 		$(document).ready(function () {		
 			// Animate only on first time visit
 			var isshow = localStorage.getItem('isshow');
-			var isMobile = false;
+			var isMobile = false;			
+
 			// device detection
 			if( /Android|webOS|iPhone|iPad|Mac|Macintosh|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 			 	console.log(isMobile = true);
@@ -464,7 +504,8 @@
 		    $(".loader-wrapper").remove(); 
 		    $("body").removeClass("overflow-hidden");
 		    setTimeout(function() {
-		    	$('.header-typewriter').append('<h1 id="" class="line anim-typewriter">ctrl + A ctrl + C and ctrl + V .</h1>');
+		    	$('.header-typewriter').prepend(heroblock);
+		    	// $('.header-typewriter').prepend('<h1 id="" class="line anim-typewriter">ctrl + A ctrl + C and ctrl + V .</h1>');
 		    }, 4800);	    
 			} 
 			else {
@@ -480,8 +521,9 @@
 						$('.loader-container').remove();
 						$('.loader-wrapper, body').addClass('loaded');						
 						$("body").removeClass("overflow-hidden");						
+						$('.header-typewriter').prepend(heroblock);
 						// Type Writer
-						$('.header-typewriter').append('<h1 id="" class="line anim-typewriter data">ctrl + A ctrl + C and ctrl + V .</h1>');
+						// $('.header-typewriter').prepend('<h1 id="" class="line anim-typewriter data">ctrl + A ctrl + C and ctrl + V .</h1>');
 					}, 4800);
 				});				
 				// Will remove overlay after 1min for users cannnot load properly.

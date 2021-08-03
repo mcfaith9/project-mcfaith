@@ -1,0 +1,107 @@
+<!-- Start Post -->
+<div class="ultimate-post-kit-container">
+	<div class="ultimate-post-kit">
+		<div class="upk-hazel-grid">
+			<div class="upk-post-grid upk-pg-text-position-bottom-left upk-post-grid-style-9 upk-blog-content-style-2">
+
+				<div class="upk-post-grid-item">
+					<div class="upk-post-grid-item-box">
+						<img alt="Travel Long Journey with Family in This winter season" class="upk-blog-image" src="assets/images/svg/codeblog.projectmcfaith.svg">
+						<div class="upk-blog-box-content">
+							<div class="upk-cetagory">
+								<div class="upk-blog-badge">
+									<span><a href="#" rel="category tag">coding</a></span>
+								</div>
+							</div>
+							<div class="upk-blog-title-wrapper">
+								<h2 class="upk-blog-title-wrap"><a class="upk-blog-title" href="#" title="Travel Long Journey with Family in This winter season">Behind the scence of project mcfaith....</a></h2>
+							</div>
+							<div class="upk-blog-post-meta">
+								<div class="upk-blog-author">
+									<span class="by">by</span> <span class="upk-post-grid-author"><a href="#">Marc Louie</a></span>
+								</div>
+								<div class="upk-blog-date">
+									<i aria-hidden="true" class="upk-icon-calendar"></i>July 9, 2021
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="upk-post-grid-item">
+					<div class="upk-post-grid-item-box">
+						<img alt="Business women having a brainstor meeting and build real customer" class="upk-blog-image" src="assets/images/svg/codeblog.gitcmd.svg">
+					<div class="upk-blog-box-content">
+						<div class="upk-cetagory">
+							<div class="upk-blog-badge">
+								<span><a href="#" rel="category tag">coding</a></span>
+							</div>
+						</div>
+						<div class="upk-blog-title-wrapper">
+							<h2 class="upk-blog-title-wrap"><a class="upk-blog-title" href="#" title="Business women having a brainstor meeting and build real customer">How to use git on your windows command prompt</a></h2>
+						</div>
+						<div class="upk-blog-post-meta">
+							<div class="upk-blog-author">
+								<span class="by">by</span> <span class="upk-post-grid-author"><a href="#">Marc Louie</a></span>
+							</div>
+							<div class="upk-blog-date">
+								<i aria-hidden="true" class="upk-icon-calendar"></i>July 9, 2021
+							</div>
+						</div>
+					</div>
+					</div>
+				</div>
+
+				<div class="upk-post-grid-item">
+					<div class="upk-post-grid-item-box">
+						<img alt="Three Business women working together with requirements for business" class="upk-blog-image" src="https://images.unsplash.com/photo-1454165205744-3b78555e5572?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80">
+						<div class="upk-blog-box-content">
+							<div class="upk-cetagory">
+								<div class="upk-blog-badge">
+									<span><a href="#" rel="category tag">Test</a></span>
+								</div>
+							</div>
+							<div class="upk-blog-title-wrapper">
+								<h2 class="upk-blog-title-wrap"><a class="upk-blog-title" href="#" title="Three Business women working together with requirements for business">Where does it come from? Contrary to popular belief, Lorem Ipsum is not simply....</a></h2>
+							</div>
+							<div class="upk-blog-post-meta">
+								<div class="upk-blog-author">
+									<span class="by">by</span> <span class="upk-post-grid-author"><a href="#">Marc Louie</a></span>
+								</div>
+								<div class="upk-blog-date">
+									<i aria-hidden="true" class="upk-icon-calendar"></i>July 9, 2021
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="upk-post-grid-item">
+					<div class="upk-post-grid-item-box">
+						<img alt="Business women having a brainstor meeting and build real customer" class="upk-blog-image" src="https://images.unsplash.com/photo-1454165205744-3b78555e5572?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80">
+						<div class="upk-blog-box-content">
+							<div class="upk-cetagory">
+								<div class="upk-blog-badge">
+									<span><a href="#" rel="category tag">Mcfaith</a></span>
+								</div>
+							</div>
+						<div class="upk-blog-title-wrapper">
+							<h2 class="upk-blog-title-wrap"><a class="upk-blog-title" href="#" title="Business women having a brainstor meeting and build real customer">Where can I get some? There are many variations of passages of Lorem Ipsum available....</a></h2>
+						</div>
+							<div class="upk-blog-post-meta">
+								<div class="upk-blog-author">
+									<span class="by">by</span> <span class="upk-post-grid-author"><a href="#">Marc Louie</a></span>
+								</div>
+								<div class="upk-blog-date">
+									<i aria-hidden="true" class="upk-icon-calendar"></i>July 9, 2021
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End post -->

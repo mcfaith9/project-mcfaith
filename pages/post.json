@@ -1,0 +1,300 @@
+{
+  "#comment": [
+    "",
+    ""
+  ],
+  "div": {
+    "@class": "ultimate-post-kit-container",
+    "div": {
+      "@class": "ultimate-post-kit",
+      "div": {
+        "@class": "upk-hazel-grid",
+        "div": {
+          "@class": "upk-post-grid upk-pg-text-position-bottom-left upk-post-grid-style-9 upk-blog-content-style-2",
+          "div": [
+            {
+              "@class": "upk-post-grid-item",
+              "div": {
+                "@class": "upk-post-grid-item-box",
+                "img": {
+                  "@alt": "Travel Long Journey with Family in This winter season",
+                  "@class": "upk-blog-image",
+                  "@src": "assets/images/svg/codeblog.projectmcfaith.svg"
+                },
+                "div": {
+                  "@class": "upk-blog-box-content",
+                  "div": [
+                    {
+                      "@class": "upk-cetagory",
+                      "div": {
+                        "@class": "upk-blog-badge",
+                        "span": {
+                          "a": {
+                            "@href": "#",
+                            "@rel": "category tag",
+                            "#text": "coding"
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "@class": "upk-blog-title-wrapper",
+                      "h2": {
+                        "@class": "upk-blog-title-wrap",
+                        "a": {
+                          "@class": "upk-blog-title",
+                          "@href": "#",
+                          "@title": "Travel Long Journey with Family in This winter season",
+                          "#text": "Behind the scence of project mcfaith...."
+                        }
+                      }
+                    },
+                    {
+                      "@class": "upk-blog-post-meta",
+                      "div": [
+                        {
+                          "@class": "upk-blog-author",
+                          "span": [
+                            {
+                              "@class": "by",
+                              "#text": "by"
+                            },
+                            {
+                              "@class": "upk-post-grid-author",
+                              "a": {
+                                "@href": "#",
+                                "#text": "Marc Louie"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "@class": "upk-blog-date",
+                          "i": {
+                            "@aria-hidden": "true",
+                            "@class": "upk-icon-calendar"
+                          },
+                          "#text": "July 9, 2021"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "@class": "upk-post-grid-item",
+              "div": {
+                "@class": "upk-post-grid-item-box",
+                "img": {
+                  "@alt": "Business women having a brainstor meeting and build real customer",
+                  "@class": "upk-blog-image",
+                  "@src": "assets/images/svg/codeblog.gitcmd.svg"
+                },
+                "div": {
+                  "@class": "upk-blog-box-content",
+                  "div": [
+                    {
+                      "@class": "upk-cetagory",
+                      "div": {
+                        "@class": "upk-blog-badge",
+                        "span": {
+                          "a": {
+                            "@href": "#",
+                            "@rel": "category tag",
+                            "#text": "coding"
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "@class": "upk-blog-title-wrapper",
+                      "h2": {
+                        "@class": "upk-blog-title-wrap",
+                        "a": {
+                          "@class": "upk-blog-title",
+                          "@href": "#",
+                          "@title": "Business women having a brainstor meeting and build real customer",
+                          "#text": "How to use git on your windows command prompt"
+                        }
+                      }
+                    },
+                    {
+                      "@class": "upk-blog-post-meta",
+                      "div": [
+                        {
+                          "@class": "upk-blog-author",
+                          "span": [
+                            {
+                              "@class": "by",
+                              "#text": "by"
+                            },
+                            {
+                              "@class": "upk-post-grid-author",
+                              "a": {
+                                "@href": "#",
+                                "#text": "Marc Louie"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "@class": "upk-blog-date",
+                          "i": {
+                            "@aria-hidden": "true",
+                            "@class": "upk-icon-calendar"
+                          },
+                          "#text": "July 9, 2021"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "@class": "upk-post-grid-item",
+              "div": {
+                "@class": "upk-post-grid-item-box",
+                "img": {
+                  "@alt": "Three Business women working together with requirements for business",
+                  "@class": "upk-blog-image",
+                  "@src": "https://images.unsplash.com/photo-1454165205744-3b78555e5572?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+                },
+                "div": {
+                  "@class": "upk-blog-box-content",
+                  "div": [
+                    {
+                      "@class": "upk-cetagory",
+                      "div": {
+                        "@class": "upk-blog-badge",
+                        "span": {
+                          "a": {
+                            "@href": "#",
+                            "@rel": "category tag",
+                            "#text": "Test"
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "@class": "upk-blog-title-wrapper",
+                      "h2": {
+                        "@class": "upk-blog-title-wrap",
+                        "a": {
+                          "@class": "upk-blog-title",
+                          "@href": "#",
+                          "@title": "Three Business women working together with requirements for business",
+                          "#text": "Where does it come from? Contrary to popular belief, Lorem Ipsum is not simply...."
+                        }
+                      }
+                    },
+                    {
+                      "@class": "upk-blog-post-meta",
+                      "div": [
+                        {
+                          "@class": "upk-blog-author",
+                          "span": [
+                            {
+                              "@class": "by",
+                              "#text": "by"
+                            },
+                            {
+                              "@class": "upk-post-grid-author",
+                              "a": {
+                                "@href": "#",
+                                "#text": "Marc Louie"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "@class": "upk-blog-date",
+                          "i": {
+                            "@aria-hidden": "true",
+                            "@class": "upk-icon-calendar"
+                          },
+                          "#text": "July 9, 2021"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "@class": "upk-post-grid-item",
+              "div": {
+                "@class": "upk-post-grid-item-box",
+                "img": {
+                  "@alt": "Business women having a brainstor meeting and build real customer",
+                  "@class": "upk-blog-image",
+                  "@src": "https://images.unsplash.com/photo-1454165205744-3b78555e5572?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
+                },
+                "div": {
+                  "@class": "upk-blog-box-content",
+                  "div": [
+                    {
+                      "@class": "upk-cetagory",
+                      "div": {
+                        "@class": "upk-blog-badge",
+                        "span": {
+                          "a": {
+                            "@href": "#",
+                            "@rel": "category tag",
+                            "#text": "Mcfaith"
+                          }
+                        }
+                      }
+                    },
+                    {
+                      "@class": "upk-blog-title-wrapper",
+                      "h2": {
+                        "@class": "upk-blog-title-wrap",
+                        "a": {
+                          "@class": "upk-blog-title",
+                          "@href": "#",
+                          "@title": "Business women having a brainstor meeting and build real customer",
+                          "#text": "Where can I get some? There are many variations of passages of Lorem Ipsum available...."
+                        }
+                      }
+                    },
+                    {
+                      "@class": "upk-blog-post-meta",
+                      "div": [
+                        {
+                          "@class": "upk-blog-author",
+                          "span": [
+                            {
+                              "@class": "by",
+                              "#text": "by"
+                            },
+                            {
+                              "@class": "upk-post-grid-author",
+                              "a": {
+                                "@href": "#",
+                                "#text": "Marc Louie"
+                              }
+                            }
+                          ]
+                        },
+                        {
+                          "@class": "upk-blog-date",
+                          "i": {
+                            "@aria-hidden": "true",
+                            "@class": "upk-icon-calendar"
+                          },
+                          "#text": "July 9, 2021"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}
