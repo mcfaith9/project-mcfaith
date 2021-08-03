@@ -9,7 +9,7 @@ body {
   background: rgba(255,255,255,0.05);
   color: #fff;
   border-radius: 2px;
-  padding: 18vh 10vw;
+  padding: 18vh 5vw;
   box-sizing: border-box;
   position: relative;
   animation: card 0.8s ease-out;
