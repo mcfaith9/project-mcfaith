@@ -2416,7 +2416,7 @@
     display: inline-flex;
   }
   .tabs > p {
-    font-size: 14px;
+    font-size: 10px !important;
   }
 }
 @media only screen and (min-width:401px) and (max-width:480px) {
@@ -2442,7 +2442,7 @@
     display: inline-flex;
   }
   .tabs > p {
-    font-size: 16px;
+    font-size: 13px !important;
   }   
 }
 @media (min-width:600px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
