@@ -435,13 +435,7 @@
   <!-- Scroll to top button -->
   <a id="scroll-top-button" class="go-top"></a>
   <!-- Loader if user is 2nd visit -->
-  <div class="loader-wrapper">
-    <div class="loader-container">
-      <h1 class="lt">&lt;</h1>
-      <h1 class="loader">/</h1>
-      <h1 class="lt" id="ltNd">&lt;</h1>
-    </div>
-  </div>
+  <div class="loader-wrapper"></div>
   <!-- Main JS -->
   <script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.0/gsap.min.js" crossorigin="anonymous"></script>
@@ -449,6 +443,12 @@
 	<script type="text/javascript" src="assets/js/text-animation.js"></script>
 	<script type="text/javascript" src="assets/js/scrolling-functions.js"></script>
 	<script type="text/javascript">			
+	var $loader = 	'<div class="loader-container">'+
+								'<h1 class="lt">&lt;</h1>'+
+								'<h1 class="loader">/</h1>'+
+								'<h1 class="lt" id="ltNd">&lt;</h1>'+
+								'</div>';
+
 	var heroblock = '<div class="card" style="background-color:transparent;">'+
 									'<div class="content">'+
 									'<h1 class="light">Hello World<span class="dark">.</span></h1>'+
@@ -511,6 +511,7 @@
 			else {
 				// Load Loader CSS
 				$('head').append( $('<link rel="stylesheet" type="text/css" />').attr('href', 'assets/css/loader.css') );
+				$('.loader-wrapper').append($loader);
 				$(".cover").remove();
 				$(".cover-2").remove();
 				$(".cover-3").remove();
