@@ -9,7 +9,6 @@
 
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/profile-image.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/gallery-animation.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/gallery.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/post.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/hero-style.css">
@@ -542,6 +541,8 @@
 									'<p class="medium">them shocked and whisper.</p>'+
 									'<p class="medium">"You can see me?"</p>'+
 									'<p class="medium"><a class="light" href="#">-- unknown</a></p>'+
+									'<p class="medium">a proud employee of</p>'+
+									'<p class="agik-gif"></p>'+
 									// '<div class="column">'+
 									// '<h6 class="dark">Do</h6>'+
 									// '<br />'+
@@ -592,8 +593,8 @@
 		    $(".loader-wrapper").remove(); 
 		    $("body").removeClass("overflow-hidden");
 		    setTimeout(function() {
-		    	$('.header-typewriter').prepend(heroblock);
-		    	// $('.header-typewriter').prepend('<h1 id="" class="line anim-typewriter">ctrl + A ctrl + C and ctrl + V .</h1>');
+		    	$(".header-typewriter").prepend(heroblock);
+		    	$(".agik-gif").append('<img alt="hashtagkiki.svg" src="assets/images/agikHigh.gif" style="width:50%;height:auto;">');
 		    }, 4800);	    
 			} 
 			else {
@@ -610,9 +611,8 @@
 						$('.loader-container').remove();
 						$('.loader-wrapper, body').addClass('loaded');						
 						$("body").removeClass("overflow-hidden");						
-						$('.header-typewriter').prepend(heroblock);
-						// Type Writer
-						// $('.header-typewriter').prepend('<h1 id="" class="line anim-typewriter data">ctrl + A ctrl + C and ctrl + V .</h1>');
+						$(".header-typewriter").prepend(heroblock);
+						$(".agik-gif").append('<img alt="hashtagkiki.svg" src="assets/images/agikHigh.gif" style="width:50%;height:auto;">');
 					}, 4800);
 				});				
 				// Will remove overlay after 1min for users cannnot load properly.
