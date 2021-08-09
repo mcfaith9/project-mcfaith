@@ -770,6 +770,23 @@ h6 {
   font-size: calc(2.3em + 1vw) !important;
 }
 
+.time-clock{
+  bottom: 0;
+  position: fixed;
+  left: 0;
+  text-align: center;
+  top: 0;
+  width: 2rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: background-color .3s,opacity .5s,visibility .5s;
+  font-size: 18px !important;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
 /*Util*/
 .bgblack{
   background: #000;

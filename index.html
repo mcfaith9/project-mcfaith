@@ -479,7 +479,10 @@
       <span class="dot">.</span>
     </div>
   </div>  
-
+  <!-- Clock -->
+  <div class="time-clock" data-locale="Singapore" data-offset="+8">
+		<p style="padding: 0!important; margin: 0!important;"></p>
+  </div>
   <!-- Scroll to top button -->
   <a id="scroll-top-button" class="go-top fa fa-angle-up">GOTOP</a>
   <!-- Loader if user is 2nd visit -->
@@ -600,6 +603,31 @@
 				$("#resize").toggleClass("active");
 			});
 			// navigation ends here
+
+			// Clock
+			// search all desired clocks
+			function searchClocks() {
+				document.querySelectorAll('.time-clock').forEach(item => {
+					const timezone = {
+						locale: item.getAttribute('data-locale'),
+						offset: item.getAttribute('data-offset')
+					};
+					
+					setInterval(() => {
+						item.querySelector('p').innerHTML = calcTime(timezone);
+					}, 1000);
+				})
+			}
+			// get local time (browser based)
+			function calcTime(timezone) {
+				const d = new Date(),
+							utc = d.getTime() + (d.getTimezoneOffset() * 60000),
+							nd = new Date(utc + (3600000 * timezone.offset));
+
+				return nd.toLocaleString();
+			}
+			searchClocks();
+
 	  	// nav animation
 	  	TweenMax.from("#brand", 1, {
 	  		delay: 0.4,
