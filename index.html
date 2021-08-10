@@ -594,6 +594,7 @@
 		    $(".loader-wrapper").remove(); 
 		    $("body").removeClass("overflow-hidden");
 		    setTimeout(function() {
+		    	$(".cover-5").removeClass("display-none");
 		    	$(".header-typewriter").prepend(heroblock);
 		    	$(".agik-gif").append(agikgif).delay(20000).queue(function () {
 					});
@@ -613,7 +614,7 @@
 						$('.loader-container').remove();
 						$('.loader-wrapper, body').addClass('loaded');						
 						$("body").removeClass("overflow-hidden");		
-						$(".cover-5").removeClass("display-none")				
+						$(".cover-5").removeClass("display-none");			
 						$(".header-typewriter").prepend(heroblock);
 						$(".agik-gif").append(agikgif).delay(20000).queue(function () {
 						});
