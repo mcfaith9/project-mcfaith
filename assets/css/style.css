@@ -797,6 +797,15 @@ h6 {
 .p-10{
   padding: 10px;
 }
+.opacity-1{
+  opacity: 1 !important;
+}
+.opacity-0{
+  opacity: 0 !important;
+}
+.display-none{
+  display: none !important;
+}
 .m-b-20px{
   margin-bottom: calc(20px + 1vw);
 }
