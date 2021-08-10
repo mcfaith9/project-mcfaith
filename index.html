@@ -520,7 +520,7 @@
   <!-- Main JS -->
   <script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.0/gsap.min.js" crossorigin="anonymous"></script>	
-	<!-- <script type="text/javascript" src="assets/js/ease-cover.js"></script> -->
+	<script type="text/javascript" src="assets/js/ease-cover.js" defer></script>
 	<script type="text/javascript" src="assets/js/text-animation.js"></script>
 	<script type="text/javascript" src="assets/js/scrolling-functions.js"></script>
 	<script type="text/javascript" src="assets/js/section-indicator.js" defer></script>
@@ -591,12 +591,6 @@
 			
 			if (isshow == null) {
 		    localStorage.setItem('isshow', 1);		
-		    $.getScript("assets/js/ease-cover.js", function(data, textStatus, jqxhr) {
-			    console.log(data); //data returned
-			    console.log(textStatus); //success
-			    console.log(jqxhr.status); //200
-			    console.log('Load was performed.');
-		    });
 		    $(".loader-wrapper").remove(); 
 		    $("body").removeClass("overflow-hidden");
 		    setTimeout(function() {
