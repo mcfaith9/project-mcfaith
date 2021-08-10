@@ -591,7 +591,12 @@
 			
 			if (isshow == null) {
 		    localStorage.setItem('isshow', 1);		
-		    $('body').append( $('<link rel="stylesheet" type="text/css" />').attr('href', 'assets/js/ease-cover.js') );
+		    $.getScript("assets/js/ease-cover.js", function(data, textStatus, jqxhr) {
+			    console.log(data); //data returned
+			    console.log(textStatus); //success
+			    console.log(jqxhr.status); //200
+			    console.log('Load was performed.');
+		    });
 		    $(".loader-wrapper").remove(); 
 		    $("body").removeClass("overflow-hidden");
 		    setTimeout(function() {
