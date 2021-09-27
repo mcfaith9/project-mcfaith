@@ -1,13 +1,39 @@
-<span id="brand">
-	<a id="nav-logo" href="#">&#060;mcfaith/&#062;</a>
-</span>
-<ul id="menu">
-	<li><a href="#home" class="js-anchor-link">home<span>.</span></a></li>					
-	<li><a href="#about-me" class="js-anchor-link">about me<span>.</span></a></li>
-	<li><a href="#my-projects" class="js-anchor-link">project<span>.</span></a></li>
-	<li><a href="#code-blog" class="js-anchor-link">codeblog<span>.</span></a></li>
-	<li><a href="#contact-me" class="js-anchor-link">contact<span>.</span></a></li>
-</ul>
-<div id="toggle">
-	<div class="span">menu</div>
+<nav>
+	<span id="brand">
+		<a id="nav-logo" href="#">&#060;mcfaith/&#062;</a>
+	</span>
+	<ul id="menu">
+		<li><a href="#home" class="js-anchor-link">home<span>.</span></a></li>					
+		<li><a href="#about-me" class="js-anchor-link">about me<span>.</span></a></li>
+		<li><a href="#my-projects" class="js-anchor-link">project<span>.</span></a></li>
+		<li><a href="#code-blog" class="js-anchor-link">codeblog<span>.</span></a></li>
+		<li><a href="#contact-me" class="js-anchor-link">contact<span>.</span></a></li>
+	</ul>
+	<div id="toggle">
+		<div class="span">menu</div>
+	</div>
+</nav>
+<div id="resize">
+	<div class="close-btn">close</div>
+	<ul id="menu">
+		<li><a href="#home" class="js-anchor-link">home<span>.</span></a></li>
+		<li><a href="#about-me" class="js-anchor-link">about me<span>.</span></a></li>
+		<li><a href="#my-projects" class="js-anchor-link">project<span>.</span></a></li>		
+		<li><a href="#code-blog" class="js-anchor-link">codeblog<span>.</span></a></li>			
+		<li><a href="#contact-me" class="js-anchor-link">contact<span>.</span></a></li>
+	</ul>
 </div>
+<script type="text/javascript">
+// nav animation
+TweenMax.from("#brand", 1, {
+	delay: 0.4,
+	y: 10,
+	opacity: 0,
+	ease: Expo.easeInOut
+})
+TweenMax.staggerFrom("#menu li a", 1, {
+	delay: 0.4,
+	opacity: 0,
+	ease: Expo.easeInOut
+}, 0.1);
+</script>

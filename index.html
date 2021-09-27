@@ -1,672 +1,179 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta content="width=device-width, initial-scale=1" name="viewport" />
-	<title>Project MC</title>
-	<link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
-	<link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+	<head>
+		<meta charset="utf-8">
+		<meta content="width=device-width, initial-scale=1" name="viewport" />
+		<title>Project MC</title>
+		<link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
 
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/profile-image.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/gallery.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/post.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/hero-style.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/section-indicator.css">
-	<link rel="stylesheet" type="text/css" href="assets/css/progressbar.css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.12.0/devicon.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/profile-image.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/gallery.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/post.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/hero-style.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/section-indicator.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/progressbar.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.12.0/devicon.min.css">
 
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" crossorigin="anonymous">
-	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js" crossorigin="anonymous"></script>
-	<script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/gh/mntn-dev/t.js@1.5.5/t.min.js"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
-</head>
-<body class="overflow-hidden">		
-	<div class="cover-5 display-none">
-		<div class="wrapper">			
-			<nav id="NavBarComponents">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/gh/mntn-dev/t.js@1.5.5/t.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript"></script>
+	</head>
+	<body class="overflow-hidden">		
+		<div class="cover-5 display-none">
+			<div class="wrapper">			
+				<div id="NavBarComponents"></div>		
+				<div class="hero" id="home">				
+					<div class="header header-typewriter"></div>				
+				</div>			
+				<div class="scroll-down"></div>
+				<div class="container-fluid" id="about-me" data-section-name="about me"></div>
+				<div class="container-fluid" id="my-projects" data-section-name="projects" style="background-color: #0f0f0f;"></div>
+				<div class="container-fluid" id="code-blog" data-section-name="code"></div>
+				<div class="container-fluid" id="contact-me" data-section-name="contact me" style="background-color: #0f0f0f;"></div>
+				<div class="footer" id="footer-section"></div>
+
+				<br><br>		
+				<div class="text-center"><p>© ALL OF THE RIGHTS RESERVED | mcfaith.</p></div>	
+				<br>
+			</div>	
+		</div>
+
+	  <div class="cover-4"></div>
+	  <div class="cover-3"></div>
+	  <div class="cover-2"></div>
+	  <div class="cover">
+	    <div class="cover-heading">
+	      <h1 class="mcfloat">mcfaith</h1>
+	      <span class="dot">.</span>
+	    </div>
+	  </div>  
+	  <!-- Clock -->
+	  <div class="time-clock" data-locale="Singapore" data-offset="+8">
+			<p class="p-0 m-0"></p>
+	  </div>
+	  <!-- Scroll to top button -->
+	  <a id="scroll-top-button" class="go-top fa fa-angle-up">GOTOP</a>
+	  <!-- Loader if user is 2nd visit -->
+	  <div class="loader-wrapper"></div>
+	  <!-- Main JS -->
+	  <script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.0/gsap.min.js" crossorigin="anonymous"></script>	
+		<script type="text/javascript" src="assets/js/ease-cover.js" defer></script>
+		<script type="text/javascript" src="assets/js/text-animation.js"></script>
+		<script type="text/javascript" src="assets/js/scrolling-functions.js"></script>
+		<script type="text/javascript" src="assets/js/section-indicator.js" defer></script>
+		<script type="text/javascript">			
+			$(document).ready(function () {		
+				$("#NavBarComponents").load("components/NavBar.html"); 
+				$("#about-me").load("components/AboutMe.html");
+				$("#my-projects").load("components/MyProjects.html");
+				$("#code-blog").load("components/CodeBlog.html");
+				$("#contact-me").load("components/ContactMe.html");
+				$("#footer-section").load("components/Footer.html")
+				// Animate only on first time visit
+				var isshow = localStorage.getItem('isshow');
+				var isMobile = false;		
+
+				// device detection
+				if( /Android|webOS|iPhone|iPad|Mac|Macintosh|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+				 	console.log(isMobile = true);
+				} else {
+					$(window).scroll(function(){
+				    if ($(window).scrollTop() >= 10) {
+				    	$('.cover-5').removeAttr('style');
+				      $('nav').addClass('fixed-header');
+				      $('#menu li').addClass('fixed-header-li');
+				      $('#brand').addClass('fixed-header-brand');
+				    }
+				    else {
+				      $('nav').removeClass('fixed-header');
+				      $('#menu li').removeClass('fixed-header-li');
+				      $('#brand').removeClass('fixed-header-brand');
+				    }
+					});		
+				}	
 				
-			</nav>
-			<div id="resize">
-				<div class="close-btn">close</div>
-				<ul id="menu">
-					<li><a href="#home" class="js-anchor-link">home<span>.</span></a></li>
-					<li><a href="#about-me" class="js-anchor-link">about me<span>.</span></a></li>
-					<li><a href="#my-projects" class="js-anchor-link">project<span>.</span></a></li>		
-					<li><a href="#code-blog" class="js-anchor-link">codeblog<span>.</span></a></li>			
-					<li><a href="#contact-me" class="js-anchor-link">contact<span>.</span></a></li>
-				</ul>
-			</div>
+				if (isshow == null) {
+			    localStorage.setItem('isshow', 1);		
+			    $(".loader-wrapper").remove(); 
+			    $("body").removeClass("overflow-hidden");
+			    setTimeout(function() {
+			    	$(".cover-5").removeClass("display-none");
+			    	$(".header-typewriter").prepend().load("components/HeroBlock.html");
+			    }, 4800);	    
+				} 
+				else {
+					// Load Loader CSS
+					$('head').append( $('<link rel="stylesheet" type="text/css" />').attr('href', 'assets/css/loader.css') );
+					$('.loader-wrapper').append().load("components/LoaderContent.html");
+					$(".cover").remove();
+					$(".cover-2").remove();
+					$(".cover-3").remove();
+					$(".cover-4").remove();	
+					// Will wait for everything on the page to load.				
+					$(window).bind('load', function() {					
+						setTimeout(function() {						
+							$('.loader-container').remove();
+							$('.loader-wrapper, body').addClass('loaded');						
+							$("body").removeClass("overflow-hidden");		
+							$(".cover-5").removeClass("display-none");			
+							$(".header-typewriter").prepend().load("components/HeroBlock.html");
+						}, 4800);
+					});				
+					// Will remove overlay after 1min for users cannnot load properly.
+					setTimeout(function() {
+						$('.loader-wrapper, body').addClass('loaded');
+					}, 60000);			
+				}
+		  	// navigation starts here
+				$("#toggle").click(function() {
+					$(this).toggleClass('on');
+					$("#resize").toggleClass("active");
+				});
+				$("#resize ul li a").click(function() {
+					$(this).toggleClass('on');
+					$("#resize").toggleClass("active");
+				});
+				$(".close-btn").click(function() {
+					$(this).toggleClass('on');
+					$("#resize").toggleClass("active");
+				});
+				// navigation ends here
 
-			<div class="hero" id="home">				
-				<div class="header header-typewriter"></div>				
-			</div>			
-			<div class="scroll-down"></div>
+				// Clock
+				// search all desired clocks
+				function searchClocks() {
+					document.querySelectorAll('.time-clock').forEach(item => {
+						const timezone = {
+							locale: item.getAttribute('data-locale'),
+							offset: item.getAttribute('data-offset')
+						};
+						
+						setInterval(() => {
+							item.querySelector('p').innerHTML = calcTime(timezone);
+						}, 1000);
+					})
+				}
+				// get local time (browser based)
+				function calcTime(timezone) {
+					const d = new Date(),
+								utc = d.getTime() + (d.getTimezoneOffset() * 60000),
+								nd = new Date(utc + (3600000 * timezone.offset));
 
-			<div class="container-fluid" id="about-me" data-section-name="about me">
-				<br>
-				<h6>about me</h6>
-				<div class="vertical"></div>
-				<br>
-				<br>
-				<br>
-				<div class="container">
-					<div class="text-center">
-						<div class="profile"><div class="hello">Hi, I'm Marc Louie<br>Gamer / Frontend & Backend Developer</div></div>
-					</div>
-					<br>
-					<div class="text-center">
-						<h5 class="hack-text">My Skills</h5>
-						<p>Through coursework and self taught from websites like codepen, github, stackoverflow and youtubes tutorials, I am experienced and familiar with these languages and frameworks.</p>
-					</div>
-					<br>
-					<div class="text-center">	
-						<i class="devicons devicon-nodejs-plain wow fadeInUp" data-wow-delay="0.4s"></i>
-						<i class="devicons devicon-composer-line-wordmark wow fadeInUp" data-wow-delay="0.4s"></i>
-						<i class="devicons devicon-amazonwebservices-plain-wordmark wow fadeInUp" data-wow-delay="0.4s"></i>
-						<i class="devicons devicon-laravel-plain-wordmark wow fadeInUp" data-wow-delay="0.6s"></i>
-						<i class="devicons devicon-bootstrap-plain-wordmark wow fadeInUp" data-wow-delay="0.6s"></i>          
-						<i class="devicons devicon-html5-plain-wordmark wow fadeInUp" data-wow-delay="0.6s"></i>
-						<i class="devicons devicon-css3-plain-wordmark wow fadeInUp" data-wow-delay="0.8s"></i> 
-						<i class="devicons devicon-jquery-plain-wordmark wow fadeInUp" data-wow-delay="0.8s"></i>         
-						<i class="devicons devicon-php-plain wow fadeInUp" data-wow-delay="0.8s"></i>
-						<i class="devicons devicon-wordpress-plain-wordmark wow fadeInUp" data-wow-delay="0.8s"></i>
-			        </div>	                
-	        	<br>
-		        <div class="text-center">
-		        	<a href="https://mcfaith9.github.io/project-mcfaith/assets/images/Turquoise%20Orange%20Profile%20Infographic%20Resume.pdf" class="btn btn-outline-success" role="button" aria-disabled="true" target="_blank">View Resume on github</a>
-		        	<a href="https://github.com/mcfaith9/project-mcfaith/raw/main/assets/images/mcfaithResume.zip" class="btn btn-outline-success" role="button" aria-disabled="true" target="_blank">Download Resume</a>
-		        </div>
-	        	<br>
-			        <div class="text-center">
-			        	<p>
-			        	  <a class="" data-toggle="collapse" href="#aboutme-more" role="button" aria-expanded="false" aria-controls="aboutme-more" style="color:#fff;">
-			        	    show more
-			        	  </a>
-			        	</p>
-			        	<div class="collapse" id="aboutme-more">
-							<section class="skills" id="skills">
-								<br>
-								<div class="row">
-									<div class="container col-md-4">
-										<h5>Languages</h5>
-										<div class="bars">
-											<label class="html">HTML</label>
-											<div class="progbar skill-1">97%</div>
-											<label class="css">CSS</label>
-											<div class="progbar skill-2">90%</div>
-											<label class="js">JavaScript</label>
-											<div class="progbar skill-3">62%</div>
-										</div>
-									</div>
-									<div class="container col-md-4">
-										<h5>Frameworks</h5>
-										<div class="bars">
-											<label class="html">jQuery</label>
-											<div class="progbar skill-1">75%</div>
-											<label class="css">Bootstrap</label>
-											<div class="progbar skill-2">90%</div>
-											<label class="css">Laravel</label>
-											<div class="progbar skill-2">70%</div>
-										</div>
-									</div>
-									<div class="container col-md-4">
-									  <h5>Databases</h5>
-									  <div class="bars">
-									    <label class="html">mySQL</label>
-									    <div class="progbar skill-1">75%</div>
-									  </div>
-									</div>
-									<div class="container col-md-4">
-									  <h5>Tools</h5>
-									  <div class="bars">
-									    <label class="html">ChromeDevTools</label>
-									    <div class="progbar skill-1">75%</div>
-									    <label class="html">Photoshop</label>
-									    <div class="progbar skill-1">75%</div>
-									    <label class="html">Git</label>
-									    <div class="progbar skill-1">90%</div>
-									    <label class="html">Sublime</label>
-									    <div class="progbar skill-1">90%</div>
-									  </div>
-									</div>
-								</div>	        	    
-							</section>
-			        	</div>
-			        </div>	
-				</div>
-				<br><br><br>
-			</div>
-
-			<div class="container-fluid" id="my-projects" data-section-name="projects" style="background-color: #0f0f0f;">
-				<br><br><br>
-
-				<h6>selected projects</h6>
-
-				<div class="vertical"></div>
-				<br>
-
-				<div class="whitespace"></div>
-				<div class="whitespace"></div>
-				<div class="container">
-					<div class="ultimate-post-kit-container">
-					  <div class="upk-elite-grid">
-							<div class="upk-post-grid upk-post-layout-2">
-								<div class="upk-post-grid-item">
-									<div class="upk-post-grid-item-box">
-										<div class="upk-blog-image-wrapper">
-											<div class="upk-main-image"><img alt="hashtagkiki.svg" class="upk-blog-image" src="assets/images/svg/hashtagkiki.svg"></div>
-											<div class="upk-category-meta-wrap upk-flex upk-flex-middle">
-												<div class="upk-elite-grid-category">
-													<a href="https://mcfaith9.github.io/hashtagkiki.com.au/" rel="category tag" target="_blank">visit on github</a>
-												</div>
-											</div>
-										</div>
-										<div class="upk-blog-box-content">
-											<div>
-												<h2 class="upk-blog-title-wrap"><a class="upk-blog-title" href="https://mcfaith9.github.io/hashtagkiki.com.au/" target="_blank" title="hashtagkiki.com.au">hashtagkiki.com.au</a></h2>
-												<div class="upk-blog-desc-wrap">
-													<div class="upk-blog-desc">
-														<p>Tila ibon kung lumipad, sumabay sa hangin Ako'y napatingin sa dalagang nababalot ng hiwaga Mapapansin kaya sa dami ng 'yong ginagawa</p>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="upk-post-grid-item">
-									<div class="upk-post-grid-item-box">
-										<div class="upk-blog-image-wrapper">
-											<div class="upk-main-image"><img alt="hashtagkiki2.svg" class="upk-blog-image" src="assets/images/svg/hashtagkiki2.svg"></div>
-											<div class="upk-category-meta-wrap upk-flex upk-flex-middle">
-												<div class="upk-elite-grid-category">
-													<a href="https://mcfaith9.github.io/hashtagkiki.com.au2/" rel="category tag" target="_blank">visit on github</a>
-												</div>
-											</div>
-										</div>
-										<div class="upk-blog-box-content">
-											<div>
-												<h2 class="upk-blog-title-wrap"><a class="upk-blog-title" href="https://mcfaith9.github.io/hashtagkiki.com.au2/" title="hashtagkiki2.com.au version 2" target="_blank">hashtagkiki2.com.au version 2</a></h2>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="upk-post-grid-item">
-									<div class="upk-post-grid-item-box">
-										<div class="upk-blog-image-wrapper">
-											<div class="upk-main-image"><img alt="Business women having a brainstor meeting and build real customer" class="upk-blog-image" src="assets/images/svg/snservices.svg"></div>
-											<div class="upk-category-meta-wrap upk-flex upk-flex-middle">
-												<div class="upk-elite-grid-category">
-													<a href="https://mcfaith9.github.io/snservices.com.au-comingsoon/" rel="category tag" target="_blank">visit on github</a>
-												</div>
-											</div>
-										</div>
-										<div class="upk-blog-box-content">
-											<div>
-												<h2 class="upk-blog-title-wrap"><a class="upk-blog-title" href="https://mcfaith9.github.io/snservices.com.au-comingsoon/" title="snservices.com.au-comingsoon" target="_blank">snservices.com.au-comingsoon</a></h2>												
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="upk-post-grid-item">
-									<div class="upk-post-grid-item-box">
-										<div class="upk-blog-image-wrapper">
-											<div class="upk-main-image"><img alt="project-biscuit" class="upk-blog-image" src="assets/images/svg/project_biscuit.svg"></div>
-											<div class="upk-category-meta-wrap upk-flex upk-flex-middle">
-												<div class="upk-elite-grid-category">
-													<a href="https://mcfaith9.github.io/Biscuit-Project/homepage.html" rel="category tag" target="_blank">visit on github</a>
-												</div>
-											</div>
-										</div>
-										<div class="upk-blog-box-content">
-											<div>
-												<h2 class="upk-blog-title-wrap"><a class="upk-blog-title" href="https://mcfaith9.github.io/Biscuit-Project/homepage.html" title="project biscuit" target="_blank">project biscuit back on i was a college stundent</a></h2>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="upk-post-grid-item">
-									<div class="upk-post-grid-item-box">
-										<div class="upk-blog-image-wrapper">
-											<div class="upk-main-image"><img alt="whitebelt.co" class="upk-blog-image" src="assets/images/svg/whitebelt.co.svg"></div>
-											<div class="upk-category-meta-wrap upk-flex upk-flex-middle">
-												<div class="upk-elite-grid-category">
-													<a href="https://whitebelt.co/login" rel="category tag" target="_blank">visit live site</a>
-												</div>
-											</div>
-										</div>
-										<div class="upk-blog-box-content">
-											<div>
-												<h2 class="upk-blog-title-wrap"><a class="upk-blog-title" href="https://whitebelt.co/login">whitebelt.co colaborate project when i as OJT</a></h2>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="upk-post-grid-item">
-									<div class="upk-post-grid-item-box">
-										<div class="upk-blog-image-wrapper">
-											<div class="upk-main-image"><img alt="starofthenorth.com.au" class="upk-blog-image" src="assets/images/svg/starofthenorth.com.au.svg"></div>
-											<div class="upk-category-meta-wrap upk-flex upk-flex-middle">
-												<div class="upk-elite-grid-category">
-													<a href="https://starofthenorth.com.au/staging/dev" rel="category tag" target="_blank">visit live site</a>
-												</div>
-											</div>
-										</div>
-										<div class="upk-blog-box-content">
-											<div>
-												<h2 class="upk-blog-title-wrap"><a class="upk-blog-title" href="https://starofthenorth.com.au/staging/dev" target="_blank" title="hashtagkiki.com.au">starofthenorth.com.au is on going project which i created an mockup themes</a></h2>
-											</div>
-										</div>
-									</div>
-								</div>
-								<div class="upk-post-grid-item">
-									<div class="upk-post-grid-item-box">
-										<div class="upk-blog-image-wrapper">
-											<div class="upk-main-image"><img alt="neilwaterhouse.com" class="upk-blog-image" src="assets/images/svg/neilwaterhouse.com.svg"></div>
-											<div class="upk-category-meta-wrap upk-flex upk-flex-middle">
-												<div class="upk-elite-grid-category">
-													<a href="https://www.neilwaterhouse.com/blog/" rel="category tag" target="_blank">visit live site</a>
-												</div>
-											</div>
-										</div>
-										<div class="upk-blog-box-content">
-											<div>
-												<h2 class="upk-blog-title-wrap"><a class="upk-blog-title" href="https://www.neilwaterhouse.com/blog/">neilwaterhouse.com is my previous part time job</a></h2>
-											</div>
-										</div>
-									</div>
-								</div>								
-
-							</div>
-						</div>
-					</div>
-					<br>
-					<br>
-					<br>
-					<br>
-				</div>
-				<div class="whitespace"></div>
-			</div>
-
-			<div class="container-fluid" id="code-blog" data-section-name="code">
-				<br><br><br>
-
-				<h6>code blog</h6>
-
-				<div class="vertical"></div>
-				<br>
-				<div class="container" id="post-container">
-					<!-- Start Post -->
-					<div class="ultimate-post-kit-container">
-						<div class="ultimate-post-kit">
-							<div class="upk-hazel-grid">
-								<div class="upk-post-grid upk-pg-text-position-bottom-left upk-post-grid-style-9 upk-blog-content-style-2">
-
-									<div class="upk-post-grid-item">
-										<div class="upk-post-grid-item-box">
-											<img alt="Travel Long Journey with Family in This winter season" class="upk-blog-image" src="assets/images/svg/codeblog.projectmcfaith.svg">
-											<div class="upk-blog-box-content">
-												<div class="upk-cetagory">
-													<div class="upk-blog-badge">
-														<span><a href="#" rel="category tag">coding</a></span>
-													</div>
-												</div>
-												<div class="upk-blog-title-wrapper">
-													<h2 class="upk-blog-title-wrap"><a class="upk-blog-title" href="#" title="Travel Long Journey with Family in This winter season">Behind the scence of project mcfaith....</a></h2>
-												</div>
-												<div class="upk-blog-post-meta">
-													<div class="upk-blog-author">
-														<span class="by">by</span> <span class="upk-post-grid-author"><a href="#">Marc Louie</a></span>
-													</div>
-													<div class="upk-blog-date">
-														<i aria-hidden="true" class="upk-icon-calendar"></i>July 9, 2021
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-
-									<div class="upk-post-grid-item">
-										<div class="upk-post-grid-item-box">
-											<img alt="Business women having a brainstor meeting and build real customer" class="upk-blog-image" src="assets/images/svg/codeblog.gitcmd.svg">
-										<div class="upk-blog-box-content">
-											<div class="upk-cetagory">
-												<div class="upk-blog-badge">
-													<span><a href="#" rel="category tag">coding</a></span>
-												</div>
-											</div>
-											<div class="upk-blog-title-wrapper">
-												<h2 class="upk-blog-title-wrap"><a class="upk-blog-title" href="#" title="Business women having a brainstor meeting and build real customer">How to use git on your windows command prompt</a></h2>
-											</div>
-											<div class="upk-blog-post-meta">
-												<div class="upk-blog-author">
-													<span class="by">by</span> <span class="upk-post-grid-author"><a href="#">Marc Louie</a></span>
-												</div>
-												<div class="upk-blog-date">
-													<i aria-hidden="true" class="upk-icon-calendar"></i>July 9, 2021
-												</div>
-											</div>
-										</div>
-										</div>
-									</div>
-
-									<div class="upk-post-grid-item">
-										<div class="upk-post-grid-item-box">
-											<img alt="Three Business women working together with requirements for business" class="upk-blog-image" src="https://images.unsplash.com/photo-1454165205744-3b78555e5572?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80">
-											<div class="upk-blog-box-content">
-												<div class="upk-cetagory">
-													<div class="upk-blog-badge">
-														<span><a href="#" rel="category tag">Test</a></span>
-													</div>
-												</div>
-												<div class="upk-blog-title-wrapper">
-													<h2 class="upk-blog-title-wrap"><a class="upk-blog-title" href="#" title="Three Business women working together with requirements for business">Where does it come from? Contrary to popular belief, Lorem Ipsum is not simply....</a></h2>
-												</div>
-												<div class="upk-blog-post-meta">
-													<div class="upk-blog-author">
-														<span class="by">by</span> <span class="upk-post-grid-author"><a href="#">Marc Louie</a></span>
-													</div>
-													<div class="upk-blog-date">
-														<i aria-hidden="true" class="upk-icon-calendar"></i>July 9, 2021
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-
-									<div class="upk-post-grid-item">
-										<div class="upk-post-grid-item-box">
-											<img alt="Business women having a brainstor meeting and build real customer" class="upk-blog-image" src="https://images.unsplash.com/photo-1454165205744-3b78555e5572?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80">
-											<div class="upk-blog-box-content">
-												<div class="upk-cetagory">
-													<div class="upk-blog-badge">
-														<span><a href="#" rel="category tag">Mcfaith</a></span>
-													</div>
-												</div>
-											<div class="upk-blog-title-wrapper">
-												<h2 class="upk-blog-title-wrap"><a class="upk-blog-title" href="#" title="Business women having a brainstor meeting and build real customer">Where can I get some? There are many variations of passages of Lorem Ipsum available....</a></h2>
-											</div>
-												<div class="upk-blog-post-meta">
-													<div class="upk-blog-author">
-														<span class="by">by</span> <span class="upk-post-grid-author"><a href="#">Marc Louie</a></span>
-													</div>
-													<div class="upk-blog-date">
-														<i aria-hidden="true" class="upk-icon-calendar"></i>July 9, 2021
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- End post -->
-				</div>
-				<br><br><br><br>
-			</div>
-
-			<div class="container-fluid" id="contact-me" data-section-name="contact me" style="background-color: #0f0f0f;">
-				<br><br><br>
-
-				<h6>contact me</h6>
-
-				<div class="vertical"></div>
-				<br>
-				<div class="container">
-					<form class="contact-form" method="post">
-						<fieldset>
-					  <div class="form-group">
-					    <input type="email" class="form-control contact-form-input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email address" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" required>
-					    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-					  </div>
-					  <div class="form-group">
-				      <textarea class="form-control contact-form-input" id="exampleFormControlTextarea1" rows="3" placeholder="Say hi." required></textarea>
-				    </div>
-				    <br>
-				    <button class="btn btn-outline-success" type="submit" name="submit">Send.</button>
-				    </fieldset>
-					</form>
-				</div>
-				<br><br><br>
-			</div>
-
-			<div class="footer">
-				<div class="container">
-					<br><br>
-					<div class="collab">
-						<div class="row">
-							<div class="col-lg-12">
-								<p class="wow fadeInUp hack-text">Got an interesting project? I can help you.</p>
-							</div>
-						</div>
-					</div>
-					<br>
-					<div class="hr">
-						<div class="row"></div>
-					</div>
-					<br><br>
-					<div class="info">
-						<div class="row">
-							<div class="col-lg-4" id="personal">
-								<p class="wow fadeInUp">connect with me</p>
-								<h4 class="wow fadeInUp" data-wow-delay="0.2s">facebook @mcfaith</h4>
-								<br><br>
-							</div>
-							<div class="col-lg-4" id="media">
-								<p class="wow fadeInUp" data-wow-delay="0s">follow me</p>
-								<ul>
-									<li id="fb" class="wow fadeInUp" data-wow-delay="0.4s">fb</li>
-									<li id="ig" class="wow fadeInUp" data-wow-delay="0.6s">github</li>
-									<li id="tw" class="wow fadeInUp" data-wow-delay="0.8s">messenger</li>
-									<!-- <li id="yt" class="wow fadeInUp" data-wow-delay="1s">e</li> -->
-								</ul>
-
-								<br><br>
-							</div>
-
-							<div class="col-lg-4" id="address">
-								<p class="wow fadeInUp" data-wow-delay="0s">say hello</p>
-								<h4 class="wow fadeInUp" data-wow-delay="0.2s">marclouie@aguyiknow.com.ph</h4>
-								<br><br>
-							</div>							
-						</div>
-					</div>
-				</div>
-			</div>
-
-			<br><br>		
-			<div class="text-center"><p>© ALL OF THE RIGHTS RESERVED | mcfaith.</p></div>	
-			<br>
-		</div>	
-	</div>
-
-  <div class="cover-4"></div>
-  <div class="cover-3"></div>
-  <div class="cover-2"></div>
-  <div class="cover">
-    <div class="cover-heading">
-      <h1 class="mcfloat">mcfaith</h1>
-      <span class="dot">.</span>
-    </div>
-  </div>  
-  <!-- Clock -->
-  <div class="time-clock" data-locale="Singapore" data-offset="+8">
-		<p style="padding: 0!important; margin: 0!important;"></p>
-  </div>
-  <!-- Scroll to top button -->
-  <a id="scroll-top-button" class="go-top fa fa-angle-up">GOTOP</a>
-  <!-- Loader if user is 2nd visit -->
-  <div class="loader-wrapper"></div>
-  <!-- Main JS -->
-  <script src="https://cdn.jsdelivr.net/npm/baffle@0.3.6/dist/baffle.min.js"></script>
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.0/gsap.min.js" crossorigin="anonymous"></script>	
-	<script type="text/javascript" src="assets/js/ease-cover.js" defer></script>
-	<script type="text/javascript" src="assets/js/text-animation.js"></script>
-	<script type="text/javascript" src="assets/js/scrolling-functions.js"></script>
-	<script type="text/javascript" src="assets/js/section-indicator.js" defer></script>
-	<script type="text/javascript">			
-	var $loader = '<div class="loader-container">'+
-								'<h1 class="lt">&lt;</h1>'+
-								'<h1 class="loader">/</h1>'+
-								'<h1 class="lt" id="ltNd">&lt;</h1>'+
-								'</div>';
-
-	var heroblock = '<div class="card" style="background-color:transparent;">'+
-									'<img class="wcmd-head" src="assets/images/windowsterminal.svg" alt="windowsterminal.png" style="position: absolute;width: 100%;top: 0px;left: 0%;    border-top-left-radius: .25rem;border-top-right-radius: .25rem;">'+
-									'<div class="content" style="text-align: center;">'+
-									'<h1 class="light">Hello World<span class="dark">.</span></h1>'+
-									'<p class="medium">Next Time a &nbsp;<a class="light" href="#">STRANGER</a></p>'+
-									'<p class="medium">talks to you when you\'re alone</p>'+
-									'<p class="medium">Just look at</p>'+
-									'<p class="medium">them shocked and whisper.</p>'+
-									'<p class="medium">"You can see me?"</p>'+
-									'<p class="medium"><a class="light" href="#">-- unknown</a></p>'+
-									'<p class="medium">a proud employee of</p>'+
-									'<p class="agik-gif"></p>'+
-									// '<div class="column">'+
-									// '<h6 class="dark">Do</h6>'+
-									// '<br />'+
-									// '<h5 class="medium">Just look at &nbsp;</h5>'+
-									// '<h5 class="medium">them shocked and whisper.</h5>'+
-									// '</div>'+
-									// '<div class="column">'+
-									// '<h6 class="dark">Tell</h6>'+
-									// '<br />'+
-									// '<h5 class="medium">"You can see me?"</h5>'+
-									// '<h5 class="medium"></h5>'+
-									// '</div>'+
-									'<div class="tabs dark">'+
-									'<p class="tab">One thing.</p>'+
-									'<p class="tab">Two thing.</p>'+
-									'<p class="tab">Three thing.</p>'+
-									'<p class="tab">Four thing.</p>'+
-									'</div>'+
-									'</div>'+
-									'</div>';
-	var agikgif = '<img class="agikgif" src="assets/images/agikHigh.gif" style="width:50%;height:auto;">';
-
-		$(document).ready(function () {		
-			$("#NavBarComponents").load("components/Navbar.html"); 
-			// Animate only on first time visit
-			var isshow = localStorage.getItem('isshow');
-			var isMobile = false;		
-
-			// device detection
-			if( /Android|webOS|iPhone|iPad|Mac|Macintosh|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-			 	console.log(isMobile = true);
-			} else {
-				$(window).scroll(function(){
-			    if ($(window).scrollTop() >= 10) {
-			    	$('.cover-5').removeAttr('style');
-			      $('nav').addClass('fixed-header');
-			      $('#menu li').addClass('fixed-header-li');
-			      $('#brand').addClass('fixed-header-brand');
-			    }
-			    else {
-			      $('nav').removeClass('fixed-header');
-			      $('#menu li').removeClass('fixed-header-li');
-			      $('#brand').removeClass('fixed-header-brand');
-			    }
-				});		
-			}	
-			
-			if (isshow == null) {
-		    localStorage.setItem('isshow', 1);		
-		    $(".loader-wrapper").remove(); 
-		    $("body").removeClass("overflow-hidden");
-		    setTimeout(function() {
-		    	$(".cover-5").removeClass("display-none");
-		    	$(".header-typewriter").prepend(heroblock);
-		    	$(".agik-gif").append(agikgif).delay(20000).queue(function () {
-					});
-		    }, 4800);	    
-			} 
-			else {
-				// Load Loader CSS
-				$('head').append( $('<link rel="stylesheet" type="text/css" />').attr('href', 'assets/css/loader.css') );
-				$('.loader-wrapper').append($loader);
-				$(".cover").remove();
-				$(".cover-2").remove();
-				$(".cover-3").remove();
-				$(".cover-4").remove();	
-				// Will wait for everything on the page to load.				
-				$(window).bind('load', function() {					
-					setTimeout(function() {						
-						$('.loader-container').remove();
-						$('.loader-wrapper, body').addClass('loaded');						
-						$("body").removeClass("overflow-hidden");		
-						$(".cover-5").removeClass("display-none");			
-						$(".header-typewriter").prepend(heroblock);
-						$(".agik-gif").append(agikgif).delay(20000).queue(function () {
-						});
-					}, 4800);
-				});				
-				// Will remove overlay after 1min for users cannnot load properly.
-				setTimeout(function() {
-					$('.loader-wrapper, body').addClass('loaded');
-				}, 60000);			
-			}
-	  	// navigation starts here
-			$("#toggle").click(function() {
-				$(this).toggleClass('on');
-				$("#resize").toggleClass("active");
-			});
-			$("#resize ul li a").click(function() {
-				$(this).toggleClass('on');
-				$("#resize").toggleClass("active");
-			});
-			$(".close-btn").click(function() {
-				$(this).toggleClass('on');
-				$("#resize").toggleClass("active");
-			});
-			// navigation ends here
-
-			// Clock
-			// search all desired clocks
-			function searchClocks() {
-				document.querySelectorAll('.time-clock').forEach(item => {
-					const timezone = {
-						locale: item.getAttribute('data-locale'),
-						offset: item.getAttribute('data-offset')
-					};
-					
-					setInterval(() => {
-						item.querySelector('p').innerHTML = calcTime(timezone);
-					}, 1000);
-				})
-			}
-			// get local time (browser based)
-			function calcTime(timezone) {
-				const d = new Date(),
-							utc = d.getTime() + (d.getTimezoneOffset() * 60000),
-							nd = new Date(utc + (3600000 * timezone.offset));
-
-				return nd.toLocaleString();
-			}
-			searchClocks();
-
-	  	// nav animation
-	  	TweenMax.from("#brand", 1, {
-	  		delay: 0.4,
-	  		y: 10,
-	  		opacity: 0,
-	  		ease: Expo.easeInOut
-	  	})
-	  	TweenMax.staggerFrom("#menu li a", 1, {
-	  		delay: 0.4,
-	  		opacity: 0,
-	  		ease: Expo.easeInOut
-	  	}, 0.1);
-	  	// nav animation ends
-	  	new WOW().init();
-		});		
-	</script>
-</body>
+					return nd.toLocaleString();
+				}
+				searchClocks();
+		  	// nav animation ends
+		  	new WOW().init();
+			});		
+		</script>
+	</body>
 </html>

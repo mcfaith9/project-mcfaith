@@ -794,6 +794,12 @@ h6 {
 .c-white{
   color: #fff;
 }
+.m-0{
+  margin: 0 !important;
+}
+.p-0{
+  padding: 0 !important;
+}
 .p-10{
   padding: 10px;
 }
