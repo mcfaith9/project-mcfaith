@@ -29,7 +29,33 @@
 	<body class="overflow-hidden">		
 		<div class="cover-5 display-none">
 			<div class="wrapper">			
-				<div id="NavBarComponents"></div>		
+				
+				<nav>
+					<span id="brand">
+						<a id="nav-logo" href="#">&#060;mcfaith/&#062;</a>
+					</span>
+					<ul id="menu">
+						<li><a href="#home" class="js-anchor-link">home<span>.</span></a></li>					
+						<li><a href="#about-me" class="js-anchor-link">about me<span>.</span></a></li>
+						<li><a href="#my-projects" class="js-anchor-link">project<span>.</span></a></li>
+						<li><a href="#code-blog" class="js-anchor-link">codeblog<span>.</span></a></li>
+						<li><a href="#contact-me" class="js-anchor-link">contact<span>.</span></a></li>
+					</ul>
+					<div id="toggle">
+						<div class="span">menu</div>
+					</div>
+				</nav>
+				<div id="resize">
+					<div class="close-btn">close</div>
+					<ul id="menu">
+						<li><a href="#home" class="js-anchor-link">home<span>.</span></a></li>
+						<li><a href="#about-me" class="js-anchor-link">about me<span>.</span></a></li>
+						<li><a href="#my-projects" class="js-anchor-link">project<span>.</span></a></li>		
+						<li><a href="#code-blog" class="js-anchor-link">codeblog<span>.</span></a></li>			
+						<li><a href="#contact-me" class="js-anchor-link">contact<span>.</span></a></li>
+					</ul>
+				</div>
+				
 				<div class="hero" id="home">				
 					<div class="header header-typewriter"></div>				
 				</div>			
@@ -72,7 +98,6 @@
 		<script type="text/javascript" src="assets/js/section-indicator.js" defer></script>
 		<script type="text/javascript">			
 			$(document).ready(function () {		
-				$("#NavBarComponents").load("components/NavBar.html"); 
 				$("#about-me").load("components/AboutMe.html");
 				$("#my-projects").load("components/MyProjects.html");
 				$("#code-blog").load("components/CodeBlog.html");
@@ -171,7 +196,21 @@
 					return nd.toLocaleString();
 				}
 				searchClocks();
+
+				// nav animation
+				TweenMax.from("#brand", 1, {
+					delay: 0.4,
+					y: 10,
+					opacity: 0,
+					ease: Expo.easeInOut
+				})
+				TweenMax.staggerFrom("#menu li a", 1, {
+					delay: 0.4,
+					opacity: 0,
+					ease: Expo.easeInOut
+				}, 0.1);
 		  	// nav animation ends
+
 		  	new WOW().init();
 			});		
 		</script>
