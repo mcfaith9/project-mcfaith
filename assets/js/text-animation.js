@@ -71,7 +71,7 @@ var arrayElements;
 var glitchArray = [];
 
 function initAllGlitch(){
-    arrayElements = document.querySelectorAll(".content");
+    arrayElements = document.querySelectorAll(".hack-text");
     for(let i=0; i<arrayElements.length; i++){
         let selector = arrayElements[i];
         let randLetterNumber = 2 + Math.floor(Math.random() * 8);
